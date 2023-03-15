@@ -5,19 +5,10 @@ const Home = () => {
   const [task, setTask] = useState("");
   const [list, setList] = useState([]);
 
-  
-  
+   
   const handleChange = (event) => {
     setTask(event.target.value);
   };
-
-  const underKeyDown = (event) => {
-    if (event.key === "enter"){
-      onSubmit()
-    }
-  };
-
-  console.log(underKeyDown)
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -39,14 +30,13 @@ const Home = () => {
         <input type="text" placeholder="What needs to be done?"
           value={task}
           onChange={handleChange}
-          onKeyDown={underKeyDown}
         />
       </form>
-      <ul>
+      
         {list.map((item, index) => {
-          return <List listItem={item} deleteList={onDelete} key={index} />;
+          return <List ListItem={item} deleteList={onDelete} key={index} />;
         })}
-      </ul>
+      
     </div>
   );
 };

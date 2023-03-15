@@ -1,12 +1,27 @@
+.form {
+    text-align: center;
+}
 
-/* 
+h1 {
+    font-size: 100px;
+    margin-bottom: 50px;
+    font-weight:lighter;
+    color: pink;
+}
 
-    You can write your own styles here...
+input {
+    border-width: 1px;
+    border-color: grey;
+    margin-bottom: 50px;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+li::marker {
+    color: white;
+}
+
+button.bttn {
+    padding-left: 50px;
+    background-color: transparent;
+    border: none;
+}
