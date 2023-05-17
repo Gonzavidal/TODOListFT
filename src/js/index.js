@@ -1,7 +1,7 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App.jsx"
+//import App from "./App.jsx"
 
 // include your styles into the webpack bundle
 import "../styles/index.css";

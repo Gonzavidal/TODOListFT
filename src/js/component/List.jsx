@@ -5,9 +5,8 @@ const ListItem = (props) => {
         props.deleteList(props.ListItem);
     };
 
-
-    return (
-        <li> {props.ListItem}{" "}
+    return ( // ERROR CONSOLA
+        <li className="list">{props.ListItem}{" "}
             <button className="bttn" onClick={handleDelete}>X
             </button>{" "}
         </li>

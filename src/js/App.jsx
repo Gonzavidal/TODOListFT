@@ -1,3 +1,4 @@
+import "../styles/index.css"
 import List from "./component/List.jsx"
 
 function App() {
