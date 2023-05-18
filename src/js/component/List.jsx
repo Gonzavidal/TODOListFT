@@ -1,16 +1,22 @@
-import React from "react"
+import React from "react";
+import PropTypes from "prop-types";
 
 const ListItem = (props) => {
     const handleDelete = () => {
-        props.deleteList(props.ListItem);
+        props.deleteListItem(props.listItem);
     };
 
-    return ( // ERROR CONSOLA
-        <li className="list">{props.ListItem}{" "}
-            <button className="bttn" onClick={handleDelete}>X
-            </button>{" "}
+    return (
+        <li className="list">
+            {props.listItem}{" "}
+            <button className="bttn" onClick={handleDelete}>X</button>{" "}
         </li>
     );
+};
+
+ListItem.propTypes = {
+    listItem: PropTypes.string.isRequired,
+    deleteListItem: PropTypes.func.isRequired
 };
 
 export default ListItem;

@@ -1,5 +1,6 @@
-import "../styles/index.css"
-import List from "./component/List.jsx"
+import "../styles/index.css";
+import List from "./component/List";
+
 
 function App() {
     return (
